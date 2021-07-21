@@ -12,9 +12,9 @@ const Home = (props) => {
                     <CardContent className="text-gray">
                         <span>{car.name.toUpperCase()}</span>
                         <ul>
-                        <li>Miles per Gallon: {car["mpg"]}</li>
-                        <li>Cylinders: {car["cylinders"]}</li>
-                        <li>Horsepower: {car["horsepower"]}</li>
+                        <li>Miles per Gallon: {car.mpg}</li>
+                        <li>Cylinders: {car.cylinders}</li>
+                        <li>Horsepower: {car.horsepower}</li>
                         </ul>
                     </CardContent>
                     <Divider />
