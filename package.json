@@ -1,7 +1,8 @@
 {
+  "homepage": "https://jamesmessina.github.io/411_wk5_day2_mapdispatchtoprops/",
   "name": "instructor_411_wk5_day1_mapstatetoprops",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.3.2",
     "@material-ui/icons": "^4.2.1",
@@ -15,8 +16,10 @@
     "redux": "^4.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
